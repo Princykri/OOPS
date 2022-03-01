@@ -4,7 +4,7 @@ public class StaticKeyword {
 
     public static void main(String[] args){
        //  greeting();   // we can't use this directly because it needs an instance to call a non-static function
-        greeting2(); // it can easily access
+        greeting2(); // it can easily accessed
 
         // we can't access a non-static stuff without referencing their instance in static context
        StaticKeyword obj=new StaticKeyword();     //so here is the way to reference
@@ -15,8 +15,8 @@ public class StaticKeyword {
 
     }
 
-    // we know that something which is non-static ,is belongs to an object
-       static void greeting(){
+    // we know that  non-static ,is belongs to an object
+       void greeting(){
         System.out.println("hello");
         greeting2();
 
